@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta Comercial - Grow BPO</title>
+    <style>
+        :root { 
+            --navy: #212752; 
+            --blue: #22ADE4; 
+            --light: #f4f7f9; 
+            --text: #333;
+            --gray-light: #fafafa;
+            --border: #eee;
+        }
+
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: var(--light); 
+            margin: 0; 
+            padding: 20px; 
+            color: var(--text); 
+            line-height: 1.6;
+        }
+
+        .proposal-card { 
+            max-width: 800px; 
+            margin: 20px auto; 
+            background: white; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+            border-radius: 8px; 
+            overflow: hidden; 
+            border-top: 10px solid var(--navy); 
+        }
+
+        .header { 
+            background: white; 
+            padding: 30px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-bottom: 1px solid var(--border); 
+        }
+
+        .logo-text { 
+            color: var(--navy); 
+            font-weight: bold; 
+            font-size: 28px; 
+            border-left: 5px solid var(--blue); 
+            padding-left: 15px; 
+            letter-spacing: -1px;
+        }
+
+        .header-info {
+            text-align: right; 
+            font-size: 12px; 
+            color: #666;
+        }
+
+        .content { 
+            padding: 40px; 
+        }
+
+        h1 { 
+            color: var(--navy); 
+            font-size: 22px; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            margin-bottom: 25px; 
+            margin-top: 0;
+        }
+
+        .client-info {
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        h2 { 
+            color: var(--blue); 
+            font-size: 18px; 
+            border-bottom: 2px solid var(--light); 
+            padding-bottom: 8px; 
+            margin-top: 35px; 
+            margin-bottom: 20px;
+        }
+
+        .item { 
+            background: var(--gray-light); 
+            padding: 20px; 
+            border-radius: 6px; 
+            border-left: 4px solid var(--blue); 
+            margin-bottom: 20px; 
+        }
+
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 20px; 
+        }
+
+        .price-section {
+            margin-top: 40px;
+        }
+
+        .price-tag { 
+            background: var(--navy); 
+            color: white; 
+            padding: 18px 25px; 
+            border-radius: 6px; 
+            margin-top: 15px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            font-size: 18px;
+        }
+
+        .price-tag strong {
+            font-size: 22px;
+        }
+
+        .cta-section {
+            margin-top: 40px;
+            padding: 30px;
+            background: #f0f7ff;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px dashed var(--blue);
+        }
+
+        .cta-text {
+            margin-bottom: 20px;
+            color: var(--navy);
+            font-weight: 500;
+        }
+
+        .footer { 
+            background: #f9f9f9; 
+            padding: 20px; 
+            text-align: center; 
+            font-size: 0.9em; 
+            color: #777; 
+            border-top: 1px solid var(--border);
+        }
+
+        ul {
+            margin: 10px 0 0 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            .header-info {
+                text-align: center;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="proposal-card">
+        <div class="header">
+            <div class="logo-text">GROW BPO</div>
+            <div class="header-info">
+                <strong>Data:</strong> 06 de Janeiro de 2026<br>
+                <strong>Consultor:</strong> Guilherme Fonseca
+            </div>
+        </div>
+        
+        <div class="content">
+            <h1>Proposta de Consultoria e Gestão Financeira</h1>
+            <div class="client-info">
+                <strong>Cliente:</strong> Açaí do Japa
+            </div>
+            
+            <div class="item">
+                <strong style="font-size: 1.1em; color: var(--navy);">1. OBJETIVO</strong><br>
+                Estruturação, diagnóstico e acompanhamento contínuo da saúde financeira da sua empresa, permitindo tomadas de decisão baseadas em dados reais.
+            </div>
+
+            <h2>2. ESCOPO DOS SERVIÇOS</h2>
+            <div class="grid">
+                <div class="item">
+                    <strong style="color: var(--navy); font-size: 1.1em;">Mês 01: Diagnóstico</strong>
+                    <ul style="padding-left: 20px; font-size: 14px;">
+                        <li>Análise de Viabilidade Financeira</li>
+                        <li>Estruturação de Processos Internos</li>
+                        <li>Mapeamento de Custos e Despesas</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <strong style="color: var(--navy); font-size: 1.1em;">Mês 02+: Gestão Ativa</strong>
+                    <ul style="padding-left: 20px; font-size: 14px;">
+                        <li>Acompanhamento de Fluxo de Caixa Semanal</li>
+                        <li>Entrega e Análise de DRE Mensal</li>
+                        <li>Reuniões de Alinhamento de Resultados</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="price-section">
+                <h2>3. INVESTIMENTO</h2>
+                <div class="price-tag">
+                    <span>Implementação e Diagnóstico (1º Mês)</span>
+                    <strong>R$ 500,00</strong>
+                </div>
+                <div class="price-tag" style="background: var(--blue); margin-top: 10px;">
+                    <span>Gestão Mensal Recorrente</span>
+                    <strong>R$ 350,00/mês</strong>
+                </div>
+            </div>
+
+            <!-- Seção de Chamada para Ação e Pagamento -->
+            <div class="cta-section">
+                <div class="cta-text">
+                    Após a leitura dos termos acima, você já pode dar o próximo passo para organizar seu financeiro. <br>
+                    <strong>Clique no botão abaixo para realizar o pagamento e iniciar o projeto:</strong>
+                </div>
+                <a href="https://pagamento.sejaefi.com.br/botao-de-pagamento/bbbb91fe-d1c9-44f9-ab3c-3a2e1c5a0366" target="_blank">
+                    <img src="https://pagamento.sejaefi.com.br/button-solid-md-1439b1-Pagar-cash.svg" alt="Botão Pagar Efí">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <strong>Grow BPO</strong> - Gestão Financeira Inteligente para o Crescimento do seu Negócio
+        </div>
+    </div>
+</body>
+</html>
